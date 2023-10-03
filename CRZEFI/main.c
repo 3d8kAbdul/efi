@@ -257,9 +257,9 @@ ExitBootServicesEvent(
 	Runtime = TRUE;
 
 	// Print some text so we know it works (300iq)
-	ST->ConOut->SetAttribute(ST->ConOut, EFI_WHITE | EFI_BACKGROUND_BLUE);
+	ST->ConOut->SetAttribute(ST->ConOut, EFI_WHITE | EFI_BACKGROUND_RED);
 	ST->ConOut->ClearScreen(ST->ConOut);
-	Print(L"Driver seems to be working as expected! Windows is booting now...\n");
+	Print(L"AHLLIA A6DYLb\n");
 }
 
 // Replaces service table pointer with desired one
