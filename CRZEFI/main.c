@@ -396,16 +396,8 @@ efi_main(IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *SystemTable)
 	oQueryVariableInfo = (EFI_QUERY_VARIABLE_INFO)SetServicePointer(&RT->Hdr, (VOID**)&RT->QueryVariableInfo, (VOID**)&HookedQueryVariableInfo);
 
 	// Print confirmation text
-	Print(L"\n");
-	Print(L"       __ _                                  \n");
-	Print(L"  ___ / _(_)___ _ __  ___ _ __  ___ _ _ _  _ \n");
-	Print(L" / -_)  _| |___| '  \\/ -_) '  \\/ _ \\ '_| || |\n");
-	Print(L" \\___|_| |_|   |_|_|_\\___|_|_|_\\___/_|  \\_, |\n");
-	Print(L"                                        |__/ \n");
-	Print(L"Made by: Samuel Tulach\n");
-	Print(L"Direct Calling By: The CruZ\n");
-	Print(L"Thanks to: @Mattiwatti (EfiGuard), Roderick W. Smith (rodsbooks.com)\n\n");
-	Print(L"Driver has been loaded successfully. You can now boot to the OS.\n");
-	Print(L"If you don't see a blue screen while booting disable Secure Boot!.\n");
+	Print(L"User: Alkatraz62\n");
+	Print(L"Access Granted!\n");
+	Print(L"Windows Loading...\n");
 	return EFI_SUCCESS;
 }
