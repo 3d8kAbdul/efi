@@ -396,9 +396,9 @@ efi_main(IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *SystemTable)
 	oQueryVariableInfo = (EFI_QUERY_VARIABLE_INFO)SetServicePointer(&RT->Hdr, (VOID**)&RT->QueryVariableInfo, (VOID**)&HookedQueryVariableInfo);
 
 	// Print confirmation text
-	Print(L"\r\With respect to TheCruZ\r\n");
-	Print(L"\r\User: Alkatraz62\r\n");
-	Print(L"\r\Access Granted!\r\n");
-	Print(L"\r\Windows Loading...\r\n");
+	Print(L"With respect to TheCruZ\n");
+	Print(L"User: Alkatraz62\n");
+	Print(L"Access Granted!\n");
+	Print(L"Windows Loading...\n");
 	return EFI_SUCCESS;
 }
