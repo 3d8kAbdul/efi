@@ -257,9 +257,11 @@ ExitBootServicesEvent(
 	Runtime = TRUE;
 
 	// Print some text so we know it works (300iq)
-	ST->ConOut->SetAttribute(ST->ConOut, EFI_WHITE | EFI_BACKGROUND_RED);
+	ST->ConOut->SetAttribute(ST->ConOut, EFI_WHITE | EFI_BACKGROUND_BLACK);
 	ST->ConOut->ClearScreen(ST->ConOut);
-	Print(L"AHLLIA A6DYLb\n");
+	Print(L"[+] And Abdulov said:\n");
+	sleep(2000);
+	Print(L"[+] I FUCK THE LAW!:\n");
 }
 
 // Replaces service table pointer with desired one
